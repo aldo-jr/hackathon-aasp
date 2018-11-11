@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Absoluto</title>
+    <!-- Latest compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="css/general.css" />
+  </head>
+  <body>
+    <header class="main-header main-header--home">
+      <div class="container">
+        <section class="main-header__brand">
+          <a class="main-header_logo-link"><img src="image/logo.png" alt=""></a>
+        </section>
+
+        <section class="main-header__banner row">
+          <div class="col">
+            <h1>Uma forma rápida e eficaz de consultar documentos</h1>
+            <p>
+              Com o [nome do produto] você tem a segurança de consulta de todo o
+              histórico do documento pesquisado e a rapidez que sempre sonhou
+            </p>
+            <div class="main-header__actions">
+              <button
+                type="button"
+                class="btn btn-primary col"
+                data-toggle="modal"
+                data-target="#inclusaoModal"
+              >
+                Acesse com o token da OAB
+              </button>
+              <a href="/consulta" class="btn btn-outline-primary col"
+                >Consulte a base pública</a
+              >
+            </div>
+          </div>
+          <div class="col"><img src="image/header-image.png" alt="" /></div>
+        </section>
+      </div>
+    </header>
+
+    <section class="security-section">
+      <div class="container">
+        <div class="row security-section__content">
+          <div class="col">
+            <img src="image/sec-image.png" alt="Segurança dos dados." />
+          </div>
+          <div class="col">
+            <h2>Segurança em suas mãos</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="articles-section">
+      <div class="container">
+        <div>
+          <h2 class="articles-section__title">Lorem ipsum dolor sit.</h2>
+        </div>
+
+        <div class="row articles-section__article-group">
+          <div class="col articles-section__article">
+            <img src="image/article-image.png" alt="Artigo icon" />
+            <p>Lorem Ipsum Generator Lorem ipsum dolor sit amet</p>
+          </div>
+          <div class="col articles-section__article">
+            <img src="image/article-image.png" alt="Artigo icon" />
+            <p>Lorem Ipsum Generator Lorem ipsum dolor sit amet</p>
+          </div>
+          <div class="col articles-section__article">
+            <img src="image/article-image.png" alt="Artigo icon" />
+            <p>Lorem Ipsum Generator Lorem ipsum dolor sit amet</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="depoimentos">
+      <div class="container">
+        <h2 class="depoimentos__title">Lorem ipsum dolor sit.</h2>
+
+        <article class="depoimentos__article">
+          <img src="image/mask-talk-image.png" alt="" />
+          <div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
+              illum doloribus quod eos sunt nemo? Debitis eum voluptatum
+              laboriosam impedit aut ea, praesentium culpa modi, excepturi
+              doloribus harum in reiciendis, repellat sequi necessitatibus
+              maiores consectetur aspernatur nulla. Sapiente maxime sed esse
+              nemo, sequi dicta nihil provident quidem, alias quasi, officia
+              illum! Nobis numquam fugit consequatur natus earum deserunt
+              reiciendis laudantium exercitationem quas eligendi temporibus modi
+              perspiciatis rem ratione error iste autem officiis, sunt quasi.
+            </p>
+            <p><b>Lorem ipsum dolor s.it</b> Lorem, ipsum dolor.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <div
+      class="modal fade"
+      id="inclusaoModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="inclusaoModal"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="inclusaoModalLabel">
+              Consultar Documentação
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form action="#" id="frmCompromisso" name="frmCompromisso">
+              <div class="form-group">OAB TOKEN: Conectado</div>
+              <div class="form-group">
+                <label class="col-form-label" for="matricula"
+                  >Número de matrícula:</label
+                >
+                <input
+                  class="form-control"
+                  type="text"
+                  name="matricula"
+                  id="matricula"
+                  size="48"
+                />
+              </div>
+
+              <div class="form-group">
+                <label class="col-form-label" for="nome"
+                  >Nome do cliente:</label
+                >
+                <input
+                  class="form-control"
+                  type="text"
+                  name="nome"
+                  id="nome"
+                  size="48"
+                />
+              </div>
+
+              <div class="form-group">
+                <label class="col-form-label" for="pesso">Pessoa</label><br />
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="inlineRadioOptions"
+                    id="inlineRadio1"
+                    value="fisica"
+                  />
+                  <label class="form-check-label" for="inlineRadio1"
+                    >Física</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="inlineRadioOptions"
+                    id="inlineRadio2"
+                    value="juridica"
+                  />
+                  <label class="form-check-label" for="inlineRadio2"
+                    >Jurídica</label
+                  >
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="col-form-label" for="rg">RG:</label>
+                <input
+                  class="form-control"
+                  type="text"
+                  name="rg"
+                  id="rg"
+                  size="48"
+                />
+              </div>
+
+              <div class="form-group">
+                <label class="col-form-label" for="cpf">CPF:</label>
+                <input
+                  class="form-control"
+                  type="text"
+                  name="cpf"
+                  id="cpf"
+                  size="48"
+                />
+              </div>
+            </form>
+            <div class="formLoading hide">
+              <div class="loader loader--style8" title="7">
+                <svg
+                  version="1.1"
+                  id="Layer_1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  x="0px"
+                  y="0px"
+                  width="24px"
+                  height="30px"
+                  viewBox="0 0 24 30"
+                  style="enable-background:new 0 0 50 50;"
+                  xml:space="preserve"
+                >
+                  <rect
+                    x="0"
+                    y="10"
+                    width="4"
+                    height="10"
+                    fill="#333"
+                    opacity="0.2"
+                  >
+                    <animate
+                      attributeName="opacity"
+                      attributeType="XML"
+                      values="0.2; 1; .2"
+                      begin="0s"
+                      dur="0.6s"
+                      repeatCount="indefinite"
+                    />
+                    <animate
+                      attributeName="height"
+                      attributeType="XML"
+                      values="10; 20; 10"
+                      begin="0s"
+                      dur="0.6s"
+                      repeatCount="indefinite"
+                    />
+                    <animate
+                      attributeName="y"
+                      attributeType="XML"
+                      values="10; 5; 10"
+                      begin="0s"
+                      dur="0.6s"
+                      repeatCount="indefinite"
+                    />
+                  </rect>
+                  <rect
+                    x="8"
+                    y="10"
+                    width="4"
+                    height="10"
+                    fill="#333"
+                    opacity="0.2"
+                  >
+                    <animate
+                      attributeName="opacity"
+                      attributeType="XML"
+                      values="0.2; 1; .2"
+                      begin="0.15s"
+                      dur="0.6s"
+                      repeatCount="indefinite"
+                    />
+                    <animate
+                      attributeName="height"
+                      attributeType="XML"
+                      values="10; 20; 10"
+                      begin="0.15s"
+                      dur="0.6s"
+                      repeatCount="indefinite"
+                    />
+                    <animate
+                      attributeName="y"
+                      attributeType="XML"
+                      values="10; 5; 10"
+                      begin="0.15s"
+                      dur="0.6s"
+                      repeatCount="indefinite"
+                    />
+                  </rect>
+                  <rect
+                    x="16"
+                    y="10"
+                    width="4"
+                    height="10"
+                    fill="#333"
+                    opacity="0.2"
+                  >
+                    <animate
+                      attributeName="opacity"
+                      attributeType="XML"
+                      values="0.2; 1; .2"
+                      begin="0.3s"
+                      dur="0.6s"
+                      repeatCount="indefinite"
+                    />
+                    <animate
+                      attributeName="height"
+                      attributeType="XML"
+                      values="10; 20; 10"
+                      begin="0.3s"
+                      dur="0.6s"
+                      repeatCount="indefinite"
+                    />
+                    <animate
+                      attributeName="y"
+                      attributeType="XML"
+                      values="10; 5; 10"
+                      begin="0.3s"
+                      dur="0.6s"
+                      repeatCount="indefinite"
+                    />
+                  </rect>
+                </svg>
+              </div>
+            </div>
+
+            <div class="formSuccess hide">
+              <h2 style="text-align:center; margin:50px 0;">
+                Consulta efetuada com sucesso!
+              </h2>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Cancelar
+            </button>
+            <button
+              type="button"
+              onclick="insereCompromisso(event);"
+              class="btn btn-primary"
+            >
+              Consultar documentação
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script src="js/web3.min.js"></script>
+    <script src="js/abi.js"></script>
+    <script src="js/compromisso.js"></script>
+  </body>
+</html>

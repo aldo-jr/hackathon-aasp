@@ -1,0 +1,160 @@
+img {
+  max-width: 100%;
+}
+
+.main-header {
+  display: block;
+  background: rgba(68, 132, 244, 0.05);
+}
+
+.main-header--home {
+  padding: 0 0 40px;
+  margin: 0 0 100px;
+  position: relative;
+}
+
+.main-header--home::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 100%;
+  height: 100px;
+  background-color: rgba(68, 132, 244, 0.05);
+  border-radius: 0 0 50% 50%;
+}
+
+.main-header__brand {
+  display: flex;
+  padding: 30px 0 30px;
+}
+
+.main-header__banner {
+  align-items: center;
+}
+
+.main-header__actions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-header__actions * {
+  max-width: 47%;
+}
+
+@media (max-width: 425px) {
+  .main-header__banner {
+    flex-wrap: wrap;
+  }
+  .main-header__actions {
+    flex-wrap: wrap;
+  }
+
+  .main-header__actions a {
+    max-width: 100%;
+  }
+}
+
+.security-section {
+  display: block;
+  margin: 200px 0 80px;
+}
+.security-section__content {
+  align-content: center;
+}
+
+.articles-section {
+  background-color: #fbfbfb;
+  padding: 30px 0;
+}
+
+.articles-section__title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.articles-section__article-group {
+  justify-content: space-between;
+}
+.articles-section__article {
+  max-width: 30%;
+  text-align: center;
+}
+
+.articles-section__article img {
+  margin-bottom: 30px;
+}
+
+.articles-section__article p {
+  font-size: 1.15em;
+}
+
+.depoimentos {
+  margin: 80px 0;
+}
+
+.depoimentos__title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.depoimentos__article {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.depoimentos__article img {
+  margin-right: 40px;
+}
+
+.formLoading svg {
+  width: 100px;
+  height: 100px;
+  display: block;
+  margin: 100px auto;
+}
+
+.hide {
+  display: none !important;
+}
+
+.consultaPage {
+  display: flex;
+  width: 100%;
+}
+aside {
+  width: 300px;
+  height: 2300px;
+
+  background: #464c58;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  margin-top: 30px;
+}
+li a {
+  display: block;
+  padding: 15px 20px 15px 30px;
+  color: #fff !important;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+li a:hover, li a.active {
+  background: #26282a;
+  color: #fff !important;
+}
+
+.consultaConteudo {
+  background: #f6f6f6;
+  flex: 2;
+  height: 2300px;
+  padding:30px;
+  color:#9C9CA2;
+}
